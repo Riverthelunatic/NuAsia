@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rough Form</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-size: 1.1rem;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      background-color: #6d6d6d;
+      padding: 10px;
+    }
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 20%;
+        height: 100vh;
+    }
+
+    .navbar {
+      line-height: 200%;
+    }
+
+    .chatbox {
+      padding: 20px;
+      flex-grow: 1;
+      background-color: #4d4d4d;
+    }
+
+    .tasks {
+      flex: 1;
+      background-color: #9f4d4d;
+      padding: 20px;
+    }
+
+    .a, a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: white;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #f87800;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 1rem;
+      border: none;
+      padding: 10px 15px;
+    }
+    .all_tasks {
+        background-color: #337ca3;
+        flex: 1;
+        padding: 10px;
+    }
+    .calendar {
+        background-color: #4d4d4d;
+        flex: 1;
+        padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Registration.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="chatbox">Chatbox area</div>
+    </div>
+    <div class="tasks">
+      <h1>Task</h1>
+      <button type="button">Create new task</button>
+    </div>
+    <div class="rightcolumn">
+        <div class="calendar">calender</div>
+        <div class="all_tasks">all tasks</div>
+    </div>
+
+  </div>
+</body>
+</html>
 
