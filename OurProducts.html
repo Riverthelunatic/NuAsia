@@ -13,53 +13,66 @@
         color: #222;
         background-color: rgba(106, 124, 86, 0.9);
     }
+
     .container {
-        max-width: 1200px;
+        max-width: 900px;
         margin: 0 auto;
         padding: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
-    .section {
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-    }
+
     h1 {
         font-size: 2rem;
         margin-bottom: 15px;
         font-weight: bold;
     }
+
     h2 {
         font-size: 1.8rem;
-        margin-top: 0;
+        margin-top: 40px;
         margin-bottom: 10px;
     }
+
     p {
         margin-bottom: 15px;
     }
+
     ul {
         margin: 0 0 15px 20px;
         padding: 0;
     }
+
     ul li {
         margin-bottom: 8px;
     }
+
     .image-container {
+        margin: 20px 0;
         text-align: center;
     }
+
     .image-container img {
         max-width: 100%;
         height: auto;
         display: inline-block;
+        border-radius: 8px;
+    }
+
+    .buy-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: rgb(106, 124, 86);
+        color: white;
+        text-decoration: none;
         border-radius: 6px;
+        font-weight: bold;
+        transition: background 0.3s ease;
     }
-    @media (min-width: 900px) {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-        }
+
+    .buy-button:hover {
+        background: rgba(106, 124, 86, 0.85);
     }
+
     @media (max-width: 600px) {
         h1 {
             font-size: 1.5rem;
@@ -73,45 +86,46 @@
 <body>
 
 <div class="container">
-    <div class="section">
-        <h1>The Birth of Nutree Skincare</h1>
-        <p>Many of my clients, like me, had suffered from skin irritation caused by harsh chemicals and synthetic fragrances in commercial products. I knew we needed something gentler — yet effective.</p>
-        <p>That's how Nutree Skincare was born.</p>
-    </div>
+    <h1>The Birth of Nutree Skincare</h1>
+    <p>Many of my clients, like me, had suffered from skin irritation caused by harsh chemicals and synthetic fragrances in commercial products. I knew we needed something gentler — yet effective.</p>
+    <p>That's how Nutree Skincare was born.</p>
 
-    <div class="section">
-        <p><strong>Nutree = Natural + True</strong><br>
-        A clean beauty brand grounded in:</p>
-        <ul>
-            <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
-            <li>High-performance actives paired with soothing botanicals</li>
-            <li>Products tailored to sensitive, acne-prone, and aging skin</li>
-        </ul>
-        <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
-    </div>
+    <p><strong>Nutree = Natural + True</strong><br>
+    A clean beauty brand grounded in:</p>
+    <ul>
+        <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
+        <li>High-performance actives paired with soothing botanicals</li>
+        <li>Products tailored to sensitive, acne-prone, and aging skin</li>
+    </ul>
 
-    <div class="section image-container">
+    <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
+
+    <div class="image-container">
         <img src="_DSC9774 (1).JPG" alt="Nutree Skincare Products">
+        <a href="https://example.com" class="buy-button">Buy Now</a>
     </div>
 
-    <div class="section">
-        <h2>Our Services</h2>
-        <p><strong>Nu True Beauty Treatments</strong></p>
-        <p><strong>Facial Treatments</strong></p>
-        <ul>
-            <li>ACNE RECOVERY FACIAL IN<br>(for hormonal acne, clogged pores, and recurring breakouts)</li>
-            <li>Sensitive Skin Repair Facial</li>
-            <li>Anti-Aging & Firming Treatment<br>(hydration, lifting, fine line smoothing)</li>
-            <li>Technology-Based Facials<br>(Radio Frequency, Cryo Therapy, Product Infusion & more)</li>
-        </ul>
-        <p><strong>Body Treatments</strong></p>
-        <ul>
-            <li>EMS Body Sculpting</li>
-            <li>Radio Frequency (RF) Body Firming</li>
-            <li>Back Acne & Skin Renewal Treatment</li>
-            <li>Hair Removal (Face & Body)</li>
-        </ul>
-    </div>
+    <h2>Our Services</h2>
+    <p><strong>Nu True Beauty Treatments</strong></p>
+
+    <p><strong>Facial Treatments</strong></p>
+    <ul>
+        <li>ACNE RECOVERY FACIAL IN<br>
+        (for hormonal acne, clogged pores, and recurring breakouts)</li>
+        <li>Sensitive Skin Repair Facial</li>
+        <li>Anti-Aging & Firming Treatment<br>
+        (hydration, lifting, fine line smoothing)</li>
+        <li>Technology-Based Facials<br>
+        (Radio Frequency, Cryo Therapy, Product Infusion & more)</li>
+    </ul>
+
+    <p><strong>Body Treatments</strong></p>
+    <ul>
+        <li>EMS Body Sculpting</li>
+        <li>Radio Frequency (RF) Body Firming</li>
+        <li>Back Acne & Skin Renewal Treatment</li>
+        <li>Hair Removal (Face & Body)</li>
+    </ul>
 </div>
 
 </body>
