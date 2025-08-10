@@ -11,32 +11,26 @@
         background-color: #ffffff;
         color: #333;
     }
-
     .container {
         text-align: center;
     }
-
     header {
         padding: 20px 10px;
     }
-
     header h1 {
         font-size: 1.8rem;
         color: #4a3a2d;
         margin-bottom: 10px;
     }
-
     .subheading {
         background-color: rgba(106, 124, 86, 0.9);
         padding: 20px;
         color: white;
     }
-
     .subheading p {
         margin: 5px 0;
         font-size: 1rem;
     }
-
     .top-section {
         display: flex;
         flex-wrap: nowrap;
@@ -44,32 +38,23 @@
         align-items: stretch;
         padding-bottom: 20px;
     }
-
     .side-image {
         flex: 1;
         min-width: 150px;
         display: flex;
-        align-items: center;
     }
-
     .side-image img {
         width: 100%;
-        height: auto;
+        height: 100%;
         object-fit: cover;
-        border-radius: 0;
     }
-
     .content {
         flex: 2;
         color: white;
         padding: 20px 30px;
         line-height: 1.6;
         font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
-
     .button {
         display: inline-block;
         background-color: #ffffff;
@@ -84,17 +69,14 @@
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     .button:hover {
         background-color: rgba(106, 124, 86, 1);
         color: white;
     }
-
     .bottom-image {
         background-color: rgba(106, 124, 86, 0.9);
         padding-bottom: 20px;
     }
-
     .bottom-image img {
         width: 80%;
         max-width: 800px;
@@ -102,93 +84,52 @@
         margin: 0 auto;
         height: auto;
     }
-
-
-    @media (max-width: 1024px) {
-        header h1 {
-            font-size: 1.6rem;
-        }
-        .content {
-            font-size: 0.95rem;
-            padding: 15px 20px;
-        }
-    }
-
     @media (max-width: 768px) {
         .top-section {
             flex-direction: column;
-            align-items: center;
-            text-align: center;
         }
         .side-image {
-            width: 100%;
-            min-height: auto;
+            min-height: 200px;
         }
-        .side-image img {
-            max-height: 300px;
-            object-fit: cover;
-        }
-        .content {
-            padding: 20px;
+        .bottom-image img {
+            width: 95%;
         }
         .button {
             width: 100%;
             max-width: 300px;
-            margin: 15px auto 0;
-        }
-    }
-
-    @media (max-width: 480px) {
-        header h1 {
-            font-size: 1.4rem;
-        }
-        .subheading p {
-            font-size: 0.9rem;
-        }
-        .content {
-            font-size: 0.9rem;
         }
     }
 </style>
 </head>
 <body>
-
 <div class="container">
     <header>
         <h1>Nu True Beauty · Nutree Skincare</h1>
     </header>
-
     <div class="subheading">
         <p>🌿 Sincerity · Nature · Technology</p>
         <p>Transforming Your Skin Journey</p>
     </div>
-
     <div class="top-section">
         <div class="side-image">
             <img src="IMG_2362.jpeg" alt="Facial Treatment">
         </div>
-
         <div class="content">
             <p>At Nu True Beauty, we believe skincare is more than skin deep.<br>
             Born from personal healing, we specialize in:</p>
-
             <p>Sensitive & acne-prone skin<br>
             Anti-aging & firming care<br>
             Technology + nature-based facials<br>
             Honest, clean skincare with Nutree</p>
-
             <p>No hard-selling. No hype. Just real, visible results.<br>
             Because every woman deserves to bloom again.</p>
+            <br>
             <a href="OurProducts.html" class="button">About our Products</a>
         </div>
-
         <div class="side-image">
             <img src="IMG_2364.jpeg" alt="Face Treatment">
         </div>
     </div>
-
 </div>
-
 </body>
 </html>
-
