@@ -89,9 +89,16 @@
         color: #fff;
     }
 
+    .span-two {
+        grid-column: span 2;
+    }
+
     @media (max-width: 600px) {
         .grid {
             grid-template-columns: 1fr;
+        }
+        .span-two {
+            grid-column: span 1;
         }
         h1 {
             font-size: 1.5rem;
@@ -106,7 +113,6 @@
 
 <div class="container">
 
-    <!-- Top Description Section -->
     <div class="full-width">
         <h1>The Birth of Nutree Skincare</h1>
         <p>Many of my clients, like me, had suffered from skin irritation caused by harsh chemicals and synthetic fragrances in commercial products. I knew we needed something gentler — yet effective.</p>
@@ -123,7 +129,6 @@
         <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
     </div>
 
-    <!-- 2x2 Grid -->
     <div class="grid">
         <div class="grid-item">
             <img src="_DSC9774 (1).JPG" alt="Nutree Skincare Products">
@@ -138,7 +143,7 @@
                 <li>Technology-Based Facials (Radio Frequency, Cryo Therapy, Product Infusion & more)</li>
             </ul>
         </div>
-        <div class="grid-item">
+        <div class="grid-item span-two">
             <h2>Body Treatments</h2>
             <ul>
                 <li>EMS Body Sculpting</li>
@@ -153,4 +158,3 @@
 
 </body>
 </html>
-
