@@ -45,11 +45,17 @@
         margin-bottom: 8px;
     }
 
+    .full-width {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin-top: 20px;
     }
 
     .grid-item {
@@ -99,20 +105,25 @@
 <body>
 
 <div class="container">
-    <h1>The Birth of Nutree Skincare</h1>
-    <p>Many of my clients, like me, had suffered from skin irritation caused by harsh chemicals and synthetic fragrances in commercial products. I knew we needed something gentler — yet effective.</p>
-    <p>That's how Nutree Skincare was born.</p>
 
-    <p><strong>Nutree = Natural + True</strong><br>
-    A clean beauty brand grounded in:</p>
-    <ul>
-        <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
-        <li>High-performance actives paired with soothing botanicals</li>
-        <li>Products tailored to sensitive, acne-prone, and aging skin</li>
-    </ul>
+    <!-- Top Description Section -->
+    <div class="full-width">
+        <h1>The Birth of Nutree Skincare</h1>
+        <p>Many of my clients, like me, had suffered from skin irritation caused by harsh chemicals and synthetic fragrances in commercial products. I knew we needed something gentler — yet effective.</p>
+        <p>That's how Nutree Skincare was born.</p>
 
-    <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
+        <p><strong>Nutree = Natural + True</strong><br>
+        A clean beauty brand grounded in:</p>
+        <ul>
+            <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
+            <li>High-performance actives paired with soothing botanicals</li>
+            <li>Products tailored to sensitive, acne-prone, and aging skin</li>
+        </ul>
 
+        <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
+    </div>
+
+    <!-- 2x2 Grid -->
     <div class="grid">
         <div class="grid-item">
             <img src="_DSC9774 (1).JPG" alt="Nutree Skincare Products">
@@ -141,7 +152,9 @@
             <p>More natural skincare products are on the way!</p>
         </div>
     </div>
+
 </div>
 
 </body>
 </html>
+
