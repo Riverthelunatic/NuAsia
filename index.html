@@ -42,10 +42,8 @@
         flex-wrap: wrap;
         background-color: rgba(106, 124, 86, 0.9);
         align-items: stretch;
-        padding-bottom: 10%;
+        padding-bottom: 20px; /* extend green slightly */
     }
-
-
 
     .side-image {
         flex: 1;
@@ -53,7 +51,7 @@
     }
 
     .side-image img {
-        width: 80%;
+        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -66,6 +64,38 @@
         font-size: 1rem;
     }
 
+    .button {
+        display: inline-block;
+        background-color: #ffffff;
+        color: rgba(106, 124, 86, 1);
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: rgba(106, 124, 86, 1);
+        color: white;
+    }
+
+    .bottom-image {
+        background-color: rgba(106, 124, 86, 0.9);
+        padding-bottom: 20px;
+    }
+
+    .bottom-image img {
+        width: 80%;
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+    }
 
     @media (max-width: 768px) {
         .top-section {
@@ -73,6 +103,13 @@
         }
         .side-image {
             min-height: 200px;
+        }
+        .bottom-image img {
+            width: 95%;
+        }
+        .button {
+            width: 100%;
+            max-width: 300px;
         }
     }
 </style>
@@ -105,11 +142,17 @@
 
             <p>No hard-selling. No hype. Just real, visible results.<br>
             Because every woman deserves to bloom again.</p>
+
+            <a href="#contact" class="button">Book an Appointment</a>
         </div>
 
         <div class="side-image">
             <img src="IMG_2364.jpeg" alt="Face Treatment">
         </div>
+    </div>
+
+    <div class="bottom-image">
+        <img src="IMG_2363.jpeg" alt="Body Treatment">
     </div>
 </div>
 
