@@ -50,21 +50,27 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        height: 100%;
     }
     .image-container {
         text-align: center;
         padding: 10px;
+        flex: 1 1 auto;
     }
     .image-container img {
         max-width: 100%;
+        max-height: 250px;
         height: auto;
+        width: auto;
         border-radius: 6px;
+        object-fit: cover;
     }
     .buy-section {
         background: #fff;
         padding: 15px;
         border-radius: 8px;
         text-align: center;
+        flex: 0 0 auto;
     }
     .buy-section a {
         display: inline-block;
@@ -117,11 +123,11 @@
         <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
     </div>
 
-    <div class="image-section">
-        <div class="section image-container">
+    <div class="image-section section">
+        <div class="image-container">
             <img src="_DSC9774 (1).JPG" alt="Nutree Skincare Products">
         </div>
-        <div class="section buy-section">
+        <div class="buy-section">
             <p>Discover the gentle power of Nutree Skincare and treat your skin to the care it deserves.</p>
             <a href="https://example.com">Buy Now</a>
         </div>
