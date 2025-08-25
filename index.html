@@ -94,28 +94,26 @@
       color: #6c4f32;
       font-weight: bold;
     }
-    .image, .image2 {
-      min-height: 100vh;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+    .hero, .hero2 {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 40px 20px;
     }
-    .image {
-      background-image: url("IMG_3067.jpeg");
-    }
-    .image2 {
-      background-image: url("IMG_3187.jpeg");
+    .hero-img, .hero-img2 {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
     .buy-btn {
       display: inline-block;
       text-decoration: none;
       background: transparent;
-      border: 2px solid white;
-      color: white;
+      border: 2px solid black;
+      color: black;
       padding: 12px 30px;
       font-size: 1rem;
       font-weight: bold;
@@ -123,25 +121,18 @@
       transition: all 0.3s ease;
     }
     .buy-btn:hover {
-      background: white;
-      color: black;
-    }
-    @media (min-width: 1024px) {
-      .image, .image2 {
-        background-size: cover;
-      }
-    }
-    @media (max-width: 768px) {
-      .image, .image2 {
-        min-height: 60vh;
-        background-size: contain;
-      }
+      background: black;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <section class="image">
+  <section class="hero">
+    <img src="IMG_3067.jpeg" alt="Nutree Skincare" class="hero-img">
     <a href="https://shopee.com.my/nutree.asia?categoryId=100630" class="buy-btn">Buy Now</a>
+  </section>
+  <section class="hero2">
+    <img src="IMG_3187.jpeg" alt="Nutree Skincare" class="hero-img2">
   </section>
   <section class="products-section">
     <h2>OUR PRODUCTS</h2>
@@ -199,4 +190,3 @@
   </section>
 </body>
 </html>
-
