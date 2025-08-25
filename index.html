@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nutree Skincare</title>
   <style>
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -18,20 +17,17 @@
         height: auto;
         display: block;
     }
-  
     .products-section {
         background-color: #9ca785; 
         padding: 60px 20px;
         text-align: center;
     }
-
     .products-section h2 {
       font-size: 2rem;
       color: #fff;
       margin-bottom: 40px;
       font-weight: bold;
     }
-
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -39,37 +35,31 @@
       max-width: 1000px;
       margin: 0 auto;
     }
-
     .product-item {
       text-align: center;
       color: #fff;
     }
-
     .product-item img {
       width: 180px;
       height: auto;
       border-radius: 8px;
       margin-bottom: 15px;
     }
-
     .product-item h3 {
       color: rgb(210, 171, 73);
       font-size: 1rem;
       text-transform: uppercase;
       margin: 10px 0 5px;
     }
-
     .product-item p {
       font-size: 0.9rem;
       margin: 0;
     }
-
     .about-section {
       background-color: #f8eadd; 
       padding: 20px 20px;
       text-align: center;
     }
-
     .about-section h2 {
       font-size: 1.8rem;
       font-weight: bold;
@@ -77,7 +67,6 @@
       line-height: 0.7;
       color: #6c4f32;
     }
-
     .about-section p {
       font-size: 1rem;
       line-height: 1.2;
@@ -85,7 +74,6 @@
       margin: 10px auto;
       color: #444;
     }
-
     .about-section ul {
       list-style: none;
       padding: 0;
@@ -93,14 +81,12 @@
       max-width: 600px;
       text-align: left;
     }
-
     .about-section ul li {
       font-size: 1rem;
       margin: 8px 0;
       position: relative;
       padding-left: 20px;
     }
-
     .about-section ul li::before {
       content: "•";
       position: absolute;
@@ -108,10 +94,9 @@
       color: #6c4f32;
       font-weight: bold;
     }
-
     .image, .image2 {
-      height: 100vh;
-      background-size: cover;
+      min-height: 100vh;
+      background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       display: flex;
@@ -119,15 +104,12 @@
       align-items: center;
       text-align: center;
     }
-
     .image {
       background-image: url("IMG_3067.jpeg");
     }
-
     .image2 {
       background-image: url("IMG_3187.jpeg");
     }
-
     .buy-btn {
       display: inline-block;
       text-decoration: none;
@@ -140,15 +122,19 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
-
     .buy-btn:hover {
       background: white;
       color: black;
     }
-
+    @media (min-width: 1024px) {
+      .image, .image2 {
+        background-size: cover;
+      }
+    }
     @media (max-width: 768px) {
       .image, .image2 {
-        background-size: 150%; 
+        min-height: 60vh;
+        background-size: contain;
       }
     }
   </style>
@@ -157,8 +143,6 @@
   <section class="image">
     <a href="https://shopee.com.my/nutree.asia?categoryId=100630" class="buy-btn">Buy Now</a>
   </section>
-
-
   <section class="products-section">
     <h2>OUR PRODUCTS</h2>
     <div class="products-grid">
@@ -197,26 +181,22 @@
       </div>
     </div>
   </section>
-
   <section class="about-section">
     <h2>TRUE TO NATURE,</h2>
     <h2>TRUE TO YOU</h2>
     <p>Many people experienced worsening skin conditions from products filled with synthetic fragrances and harsh chemicals.<br>
     We wanted to create a safer, more honest solution for skin recovery.</p>
-
     <p>That’s how Nutree Skincare was born.</p>
-
     <p><strong>Nutree = Natural + True</strong><br>
     A clean beauty brand built on:</p>
-
     <ul>
       <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
       <li>High-performance actives paired with gentle botanical extracts</li>
       <li>Products crafted for sensitive, acne-prone, and aging skin</li>
     </ul>
-
     <p>Nutree isn’t about hype or trendy launches.<br>
     It’s about building long-term trust — skincare you can count on, every day.</p>
   </section>
 </body>
 </html>
+
