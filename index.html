@@ -1,135 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nu True Beauty · Nutree Skincare</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutree Skincare</title>
+  <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ffffff;
-        color: #333;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
     }
-    .container {
+
+    /* Products Section */
+    .products-section {
+      background-color: #9ca785; /* soft green */
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .products-section h2 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .product-item {
+      text-align: center;
+      color: #fff;
+    }
+
+    .product-item img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-item h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 10px 0 5px;
+    }
+
+    .product-item p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: #f8eadd; /* soft beige */
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #6c4f32;
+    }
+
+    .about-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 10px auto;
+      color: #444;
+    }
+
+    .about-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .about-section ul li {
+      font-size: 1rem;
+      margin: 8px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .about-section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #6c4f32;
+      font-weight: bold;
+    }
+    .image {
+        height: 30vh; /* Full screen height */
+        background-image: url("your-image.jpg");
+        background-size: cover;   /* Makes image cover the whole area */
+        background-position: center; /* Keeps it centered */
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
         text-align: center;
     }
-    header {
-        padding: 20px 10px;
-    }
-    header h1 {
-        font-size: 1.8rem;
-        color: #4a3a2d;
-        margin-bottom: 10px;
-    }
-    .subheading {
-        background-color: rgba(106, 124, 86, 0.9);
-        padding: 20px;
-        color: white;
-    }
-    .subheading p {
-        margin: 5px 0;
-        font-size: 1rem;
-    }
-    .top-section {
-        display: flex;
-        flex-wrap: nowrap;
-        background-color: rgba(106, 124, 86, 0.9);
-        align-items: stretch;
-        padding-bottom: 20px;
-    }
-    .side-image {
-        flex: 1;
-        min-width: 150px;
-        display: flex;
-    }
-    .side-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .content {
-        flex: 2;
-        color: white;
-        padding: 20px 30px;
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-    .button {
-        display: inline-block;
-        background-color: #ffffff;
-        color: rgba(106, 124, 86, 1);
-        padding: 12px 24px;
-        font-size: 1rem;
-        font-weight: bold;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        margin-top: 15px;
-        text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .button:hover {
-        background-color: rgba(106, 124, 86, 1);
-        color: white;
-    }
-    .bottom-image {
-        background-color: rgba(106, 124, 86, 0.9);
-        padding-bottom: 20px;
-    }
-    .bottom-image img {
-        width: 80%;
-        max-width: 800px;
-        display: block;
-        margin: 0 auto;
-        height: auto;
-    }
-    @media (max-width: 768px) {
-        .top-section {
-            flex-direction: column;
-        }
-        .side-image {
-            min-height: 200px;
-        }
-        .bottom-image img {
-            width: 95%;
-        }
-        .button {
-            width: 100%;
-            max-width: 300px;
-        }
-    }
-</style>
+  </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>Nu True Beauty · Nutree Skincare</h1>
-    </header>
-    <div class="subheading">
-        <p>🌿 Sincerity · Nature · Technology</p>
-        <p>Transforming Your Skin Journey</p>
+    <section class="image">
+        <h1> </h1>
+    </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section">
+    <h2>OUR PRODUCTS</h2>
+    <div class="products-grid">
+      <div class="product-item">
+        <img src="your-image1.jpg" alt="Skincare">
+        <h3>Skincare Products</h3>
+        <p>Everything you need from cleansing to moisturising</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image2.jpg" alt="Makeup">
+        <h3>Makeup Products</h3>
+        <p>Look fresh for a day in the sun or a fun night out!</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image3.jpg" alt="Accessories">
+        <h3>Accessories</h3>
+        <p>Make your beauty routine as smooth as possible</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image4.jpg" alt="Soap">
+        <h3>Soap</h3>
+        <p>Gentle cleansing for everyday use</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image5.jpg" alt="Serum">
+        <h3>Serum</h3>
+        <p>High-performance skincare actives</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image6.jpg" alt="Face Oil">
+        <h3>Face Oil</h3>
+        <p>Nourishment for healthy glowing skin</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image7.jpg" alt="Bundle 1">
+        <h3>Skincare Bundle</h3>
+        <p>Complete care in one set</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image8.jpg" alt="Bundle 2">
+        <h3>Care Set</h3>
+        <p>Perfect combination for skincare routine</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image9.jpg" alt="Tote Bag">
+        <h3>Nutree Tote</h3>
+        <p>Carry your essentials in style</p>
+      </div>
     </div>
-    <div class="top-section">
-        <div class="side-image">
-            <img src="IMG_2362.jpeg" alt="Facial Treatment">
-        </div>
-        <div class="content">
-            <p>At Nu True Beauty, we believe skincare is more than skin deep.<br>
-            Born from personal healing, we specialize in:</p>
-            <p>Sensitive & acne-prone skin<br>
-            Anti-aging & firming care<br>
-            Technology + nature-based facials<br>
-            Honest, clean skincare with Nutree</p>
-            <p>No hard-selling. No hype. Just real, visible results.<br>
-            Because every woman deserves to bloom again.</p>
-            <br>
-            <a href="OurProducts.html" class="button">About our Products</a>
-        </div>
-        <div class="side-image">
-            <img src="IMG_2364.jpeg" alt="Face Treatment">
-        </div>
-    </div>
-</div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <h2>TRUE TO NATURE, TRUE TO YOU</h2>
+    <p>Many people experienced worsening skin conditions from products filled with synthetic fragrances and harsh chemicals.<br>
+    We wanted to create a safer, more honest solution for skin recovery.</p>
+
+    <p>That’s how Nutree Skincare was born.</p>
+
+    <p><strong>Nutree = Natural + True</strong><br>
+    A clean beauty brand built on:</p>
+
+    <ul>
+      <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
+      <li>High-performance actives paired with gentle botanical extracts</li>
+      <li>Products crafted for sensitive, acne-prone, and aging skin</li>
+    </ul>
+
+    <p>Nutree isn’t about hype or trendy launches.<br>
+    It’s about building long-term trust — skincare you can count on, every day.</p>
+  </section>
+
 </body>
 </html>
