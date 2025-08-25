@@ -47,7 +47,7 @@
     }
 
     .product-item h3 {
-      color:rgb(210, 171, 73);
+      color: rgb(210, 171, 73);
       font-size: 1rem;
       text-transform: uppercase;
       margin: 10px 0 5px;
@@ -102,61 +102,64 @@
       color: #6c4f32;
       font-weight: bold;
     }
+
+    /* Fullscreen Image Sections */
+    .image, .image2 {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
     .image {
-        height: 100vh; 
-        background-image: url("IMG_3067.jpeg");
-        background-size: cover;   
-        background-position: center; 
-        background-repeat: no-repeat; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
+      background-image: url("IMG_3067.jpeg");
     }
-      .image2 {
-        height: 100vh; 
-        background-image: url("IMG_3101.jpeg");
-        background-size: cover;   
-        background-position: center; 
-        background-repeat: no-repeat; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
+
+    .image2 {
+      background-image: url("IMG_3101.jpeg");
     }
+
+    /* Buy Now Button */
     .buy-btn {
-      background: transparent;    
-      border: 2px solid white;     
-      color: white;                
-      padding: 12px 30px;    
+      display: inline-block;
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 12px 30px;
       font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
       transition: all 0.3s ease;
     }
-    
+
     .buy-btn:hover {
-      background: white;           
-      color: black;              
-    }
-    @media (max-width: 768px) {
-      .image, .image2 {
-        background-size: contain;   /* shows whole image */
-        background-position: center;
-      }
+      background: white;
+      color: black;
     }
 
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+      .image, .image2 {
+        background-size: 150%; /* zoomed out a bit but still covers */
+      }
+    }
   </style>
 </head>
 <body>
-    <section class="image">
-      <button href="https://shopee.com.my/nutree.asia?categoryId=100630" class="buy-btn">Buy Now</button>
-    </section>
-    <section class="image2">
-        <h1> </h1>
-    </section>
+  <!-- Hero Image with Buy Button -->
+  <section class="image">
+    <a href="https://shopee.com.my/nutree.asia?categoryId=100630" class="buy-btn">Buy Now</a>
+  </section>
+
+  <!-- Second Hero Image -->
+  <section class="image2">
+    <h1></h1>
+  </section>
 
   <!-- PRODUCTS SECTION -->
   <section class="products-section">
@@ -191,15 +194,12 @@
       </div>
       <div class="product-item">
         <img src="your-image8.jpg" alt="">
-
       </div>
       <div class="product-item">
         <img src="your-image9.jpg" alt="">
- 
       </div>
     </div>
   </section>
-
 
   <!-- ABOUT SECTION -->
   <section class="about-section">
@@ -221,6 +221,5 @@
     <p>Nutree isn’t about hype or trendy launches.<br>
     It’s about building long-term trust — skincare you can count on, every day.</p>
   </section>
-
 </body>
 </html>
