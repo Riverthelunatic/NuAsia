@@ -103,9 +103,12 @@
       padding: 20px 10px;
     }
     .hero-img, .hero-img2 {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      max-width: 1000px;
+      height: 500px;        /* fixed height for consistency */
+      object-fit: cover;    /* keeps proportions but crops */
       margin-bottom: 20px;
+      border-radius: 8px;
     }
     .buy-btn {
       display: inline-block;
