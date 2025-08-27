@@ -126,9 +126,41 @@
       background: white;
       color: black;
     }
+    .navbar {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 20px;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        color: #54845d; 
+    }
   </style>
 </head>
 <body>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="product.html">Services</a>
+    <a href="https://nutruebeauty.com//">Services</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+
   <section class="hero">
     <img src="IMG_3187.jpeg" alt="Nutree Skincare" class="hero-img">
     <a href="https://shopee.com.my/nutree.asia?categoryId=100630" class="buy-btn">Buy Now</a>
