@@ -126,56 +126,91 @@
             font-size: 1.4rem;
         }
     }
+    .products-section {
+        background-color: #9ca785; 
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .products-section h2 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .product-item {
+      text-align: center;
+      color: #fff;
+    }
+    .product-item img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product-item h3 {
+      color: rgb(210, 171, 73);
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 10px 0 5px;
+    }
+    .product-item p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
 </style>
 </head>
 <body>
-
-<a href="javascript:history.back()" class="back-button">← Back</a>
-
-<div class="container">
-
-    <div class="full-width">
-        <h1>The Birth of Nutree Skincare</h1>
-        <p>Many of my clients, like me, had suffered from skin irritation caused by harsh chemicals and synthetic fragrances in commercial products. I knew we needed something gentler — yet effective.</p>
-        <p>That's how Nutree Skincare was born.</p>
-
-        <p><strong>Nutree = Natural + True</strong><br>
-        A clean beauty brand grounded in:</p>
-        <ul>
-            <li>Fragrance-free, alcohol-free, non-irritating formulations</li>
-            <li>High-performance actives paired with soothing botanicals</li>
-            <li>Products tailored to sensitive, acne-prone, and aging skin</li>
-        </ul>
-
-        <p>Nutree isn’t about trends or hype — it’s about trust. Skincare that supports your skin every single day.</p>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="https://nutruebeauty.com//">Services/</a>
+        <a href="contactus.html">Contact Us</a>
     </div>
 
-    <div class="grid">
-        <div class="grid-item">
-            <img src="_DSC9774 (1).JPG" alt="Nutree Skincare Products">
-            <a href="https://example.com" class="button">Buy Now</a>
-        </div>
-        <div class="grid-item">
-            <h2>Facial Treatments</h2>
-            <ul>
-                <li>ACNE RECOVERY FACIAL IN (for hormonal acne, clogged pores, and recurring breakouts)</li>
-                <li>Sensitive Skin Repair Facial</li>
-                <li>Anti-Aging & Firming Treatment (hydration, lifting, fine line smoothing)</li>
-                <li>Technology-Based Facials (Radio Frequency, Cryo Therapy, Product Infusion & more)</li>
-            </ul>
-        </div>
-        <div class="grid-item span-two">
-            <h2>Body Treatments</h2>
-            <ul>
-                <li>EMS Body Sculpting</li>
-                <li>Radio Frequency (RF) Body Firming</li>
-                <li>Back Acne & Skin Renewal Treatment</li>
-                <li>Hair Removal (Face & Body)</li>
-            </ul>
-        </div>
+    <div class="products-grid">
+      <div class="product-item">
+        <img src="your-image1.jpg" alt="Skincare">
+        <h3>Skincare Products</h3>
+        <p>Everything you need from cleansing to moisturising</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image2.jpg" alt="Makeup">
+        <h3>Makeup Products</h3>
+        <p>Look fresh for a day in the sun or a fun night out!</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image3.jpg" alt="Accessories">
+        <h3>Accessories</h3>
+        <p>Make your beauty routine as smooth as possible</p>
+      </div>
+      <div class="product-item">
+        <img src="your-image4.jpg" alt="">
+      </div>
+      <div class="product-item">
+        <img src="your-image5.jpg" alt="">
+      </div>
+      <div class="product-item">
+        <img src="your-image6.jpg" alt="">
+      </div>
+      <div class="product-item">
+        <img src="your-image7.jpg" alt="">
+      </div>
+      <div class="product-item">
+        <img src="your-image8.jpg" alt="">
+      </div>
+      <div class="product-item">
+        <img src="your-image9.jpg" alt="">
+      </div>
     </div>
 
-</div>
+
 
 </body>
 </html>
