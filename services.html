@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nu True Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #ffffff;
+    }
+
+    .navbar {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        color: #54845d; 
+    }
+    .brand-section {
+      background: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .brand-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .brand-logo {
+      max-width: 120px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+  
+    .brand-main-image {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      margin: 0px auto;
+      display: block;
+    }
+  
+    .brand-text {
+      margin-top: 20px;
+      line-height: 1.8;
+      font-size: 16px;
+      color: #222;
+    }
+  
+    .brand-text p {
+      margin: 12px 0;
+    }
+    .buy-now {
+      display: block;
+      margin: 10px auto 10px;
+      padding: 12px 15px;
+      background-color: #54845d;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .buy-now:hover {
+      background-color: #436b4a;
+    }
+  
+    @media (max-width: 768px) {
+      .brand-text {
+        font-size: 14px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+  
+      <!-- Brand text -->
+<section class="brand-section">
+  <div class="brand-container">
+    <img src="skincare.png" alt="Nutree Products" class="brand-main-image">
+
+    <div class="brand-text">
+      <p>🌿 Nutree Beauty Products</p>
+      <p>Our Nutree skincare range is thoughtfully crafted with natural ingredients and professional expertise.</p>
+      <p>We are deeply committed to safe, eco-friendly home care — helping you care for your skin with confidence and respect for nature.</p>
+      <p>✨ Discover more on the Nutree Website</p>
+      <p>🛒 Shop directly on Shopee</p>
+    </div>
+
+    <!-- Buttons moved inside -->
+    <a href="https://shopee.com.my/nutree.asia?categoryId=100630&entryPoint=ShopByPDP&itemId=41364973000" class="buy-now">Buy Now</a>
+    <a href="https://nutree.asia/" class="buy-now">Find Out More</a>
+  </div>
+</section>
+
+</body>
+</html>
